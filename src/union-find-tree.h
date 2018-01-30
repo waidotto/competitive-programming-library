@@ -27,6 +27,9 @@ class UnionFindTree {
 			}
 		}
 	private:
+		const int N_;
+		std::vector<int> parent_;
+		std::vector<int> rank_;
 		int findRoot(int x) {
 			if(parent_[x] == x) {
 				return x;
@@ -35,8 +38,5 @@ class UnionFindTree {
 				return parent_[x] = findRoot(parent_[x]);
 			}
 		}
-		const int N_;
-		std::vector<int> parent_;
-		std::vector<int> rank_;
 };
 //-----END union find tree-----
