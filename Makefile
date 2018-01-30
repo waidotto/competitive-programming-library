@@ -9,7 +9,7 @@ all: $(TARGET_DIR) $(TARGETS)
 $(TARGET_DIR):
 	mkdir -p ./$(TARGET_DIR)/
 
-$(TARGET_DIR)/%: $(TEST_DIR)/%.cpp
+$(TARGET_DIR)/%: $(TEST_DIR)/%.cpp $(TARGET_DIR)
 	$(CC) -o $@ $<
 	./$@
 
