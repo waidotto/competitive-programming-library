@@ -1,5 +1,4 @@
 //-----BEGIN union find tree-----
-//author: y.
 //complexity: -
 
 // [0, n) をノードとする union find tree
